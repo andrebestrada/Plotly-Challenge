@@ -9,4 +9,6 @@ The functionality a dropdown selector that enable user to select and search for 
 
 Please find down below some screenshots of the web app:
 
-![Portrait](https://github.com/andrebestrada/Web-Scraping-challenge/blob/main/Missions_to_Mars/Portrait.png?raw=true)
+![Portrait](https://github.com/andrebestrada/Plotly-Challenge/blob/main/1.png)
+![Portrait](https://github.com/andrebestrada/Plotly-Challenge/blob/main/2.png)
+![Portrait](https://github.com/andrebestrada/Plotly-Challenge/blob/main/3.png)
