@@ -46,7 +46,6 @@ d3.json("../../samples.json").then((importedData)=>{
             }
         }
 
-
         filtered_data=Object(otus_data.samples).filter(sample=>sample.id===selector_id)
         var ids = Object(filtered_data).map(row => row.otu_ids)[0];
         var values = Object(filtered_data).map(row => row.sample_values)[0];
@@ -56,6 +55,11 @@ d3.json("../../samples.json").then((importedData)=>{
         
         d3.select("#otus_count").text(ids.length);
         d3.select("#subject_id").text(selector_id);
+
+        var cultures_found=values.reduce((a, b) => a + b, 0)
+        d3.select("#cultures-found").text(cultures_found)
+        d3.select("#greatest-found").text(Math.max.apply(Math, values))
+        d3.select("#smallest-found").text(Math.min.apply(Math, values))
 
         var traceBar = {
             x: values.slice(0,10),
@@ -95,7 +99,7 @@ d3.json("../../samples.json").then((importedData)=>{
         };
 
         // Plot bar chart"
-        Plotly.newPlot("bar", data_bar, layout_bar);
+        Plotly.newPlot("bar", data_bar, layout_bar,{displayModeBar: false});
 
         var trace_bubble = {
             x: ids,
