@@ -1,6 +1,7 @@
 # Plotly-Challenge
 <hr>
-Web link: https://andrebestrada.github.io/Plotly-Challenge/
+# Web link: https://andrebestrada.github.io/Plotly-Challenge/
+
 <br>
 This web application presents a nice looking dashboard that will provide some information about Belly Button Biodiversity, super interesting.
 <br>
