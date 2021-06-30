@@ -1,7 +1,7 @@
 // Use d3.json() to fetch data from JSON file
 var otus_data={};
 
-d3.json("../../samples.json").then((importedData)=>{
+d3.json("../../data/samples.json").then((importedData)=>{
     var otus_data = importedData;
     console.log(otus_data);
 
